@@ -1,13 +1,12 @@
 
 library(igraph)
 
-# === CÓDIGO ACTUALIZADO SIN WARNINGS ===
 if (exists("g")) {
   cat(" Red cargada exitosamente:\n")
   cat("   Nodos:", vcount(g), "\n")
   cat("   Aristas:", ecount(g), "\n")
-  cat("   Atributos de nodos:", vertex_attr_names(g), "\n")  # ← CORREGIDO
-  cat("   Atributos de aristas:", edge_attr_names(g), "\n")  # ← CORREGIDO
+  cat("   Atributos de nodos:", vertex_attr_names(g), "\n") 
+  cat("   Atributos de aristas:", edge_attr_names(g), "\n")  
 }
 
 # Las comunidades ya están calculadas
